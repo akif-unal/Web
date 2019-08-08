@@ -1,0 +1,72 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-item-img {
+    width: 100%;
+}
+
+.main-menu {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-item-font {
+
+    color: black
+}
+
+.my-column {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.car-bg {
+    background-image: url(../../icons/car1/profile-oval.png);
+}
+
+.carList {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.my-column-secondRow {
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.form-control-with-icon {
+    border: 1px solid #313131;
+}
+
+#my-pagination {
+    color: #FC9D31;
+    background-color: #fff;
+    border: 1px solid #FC9D31;
+}
+.page-link {
+    color:  #FC9D31;
+}
+
+nav:hover {
+    border: 2px purple;
+}
+.navbar {
+    padding: 0rem;
+}
+.nav-link {
+    padding: 0;
+}
+
+
+.mycontent-left {
+    border-right: 1px dashed #333;
+  }
