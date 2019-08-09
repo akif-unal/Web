@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning HTML purple site</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body id="home" class="open-left">
+    <div id="offcanvas-left" class="hide">
+        <ul>
+            <li><a href="#top">Top </a></li>
+            <li><a href="#quote">Quote </a></li>
+            <li><a href="#contact">Contact Us </a></li>
+            <li><a href="next.html">Next Page</a></li>
+        </ul>
+    </div>
+    <div class="togglebar">
+        <!-- adds the class of hide to .offcanvas.left -->
+        <div class="toggle" onclick="toggleLeft()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    <div class="center">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#top">Top </a></li>
+                    <li><a href="#quote">Quote </a></li>
+                    <li><a href="#contact">Contact Us </a></li>
+                    <li><a href="next.html">Next Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <main id="top">
+                <article>
+                    <figure class="hero">
+                        <img src="https://picsum.photos/1200/440/?image=201"
+                            alt="A laptop with a mouse on a desk and a pair of glasses." />
+                        <figcaption>
+                            <h1>Learning HTML</h1>
+                        </figcaption>
+                    </figure>
+                    <h2 style="font-size: 2em">WHAT IS HTML?</h2>
+                    <hr>
+                    <p>
+                        <b> Hypertext Markup Language (HTML)</b> is the standard markup language for creating web pages
+                        and web applications. With <i> Cascading Style Sheets (CSS)</i> and <em>JavaScript</em>, it
+                        forms a
+                        triad of <strong> cornerstone technologies</strong> for the World Wide Web.
+                    </p>
+                    <p>
+                        <q>Web browsers</q> receive <mark> HTML documents</mark>
+                        from a web server or from local storage and render them into multimedia web pages. <a
+                            href="#">HTML
+                            describes</a> the structure of a
+                        web page semantically and originally included cues for the appearance of the document.
+                    </p>
+                    <blockquote cite="http://twitter.com" id="quote">
+                        "Every great developer you know got there by solving problems they were unqualified to solve
+                        until they actually did it." - Patrick McKenzie
+                    </blockquote>
+                    <!-- Tables -->
+                    <table class="styled">
+                        <colgroup>
+                            <col style="background-color: blueviolet;">
+                        </colgroup>
+                        <colgroup>
+                            <col style="background-color: #f4e767;" span="2">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Akif</td>
+                                <td>ÜNAL</td>
+                                <td>akifunal05@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Test name</td>
+                                <td>Test surname</td>
+                                <td>blabla@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+
+                </article>
+            </main>
+            <footer>
+                <section>
+                    <table class="styled">
+                        <tr>
+                            <th colspan="2">Working Hours</th>
+                        </tr>
+                        <tr>
+                            <td>mon-fri</td>
+                            <td>7am-6pm</td>
+                        </tr>
+                        <tr>
+                            <td>sat-sun</td>
+                            <td>closed</td>
+                        </tr>
+                    </table>
+                    <table class="styled">
+                        <tr>
+                            <th colspan="2">Contact Info</th>
+                        </tr>
+                        <tr>
+                            <td>Cell:</td>
+                            <td>123.345.6789</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>info@learninghtml.com</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <form action="/action_page.php">
+                        <legend><b>Contact Us</b></legend>
+                        <input type="text" name="fullName" placeholder="Full Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <textarea name="msg" cols="30" rows="10" placeholder="Write message here"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </footer>
+        </section>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
