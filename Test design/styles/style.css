@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: Cabin;
@@ -6,13 +10,7 @@ body {
     font-size: 16px;
     line-height: 20px;
 
-    margin: auto;
-    height: 100%;
-    width: 100%;
-}
 
-.nav-item-img {
-    width: 100%;
 }
 
 .main-menu {
@@ -20,9 +18,25 @@ body {
     font-weight: bold;
 }
 
+.main-menu li p {
+    margin-top: 1px;
+}
+
 .navbar-item-font {
     color: black;
     margin-bottom: 0.5rem;
+}
+
+.navbar-nav li {
+    border-right: 1px solid #EEEEEE;
+}
+
+.navbar-border-left {
+    border-left: 1px solid #EEEEEE;
+}
+
+.section-home {
+    display: flow-root;
 }
 
 .my-column {
@@ -30,9 +44,25 @@ body {
     border-radius: 10px;
 }
 
-.car-bg {
-    background-image: url(../../icons/car1/profile-oval.png);
+.bracket {
+    display: inline-block;
+    border-right: 2px solid #9B9B9B;
+    height: 30px;
+    margin: 0 auto;
 }
+
+
+.my-border {
+    
+    left: 50%;
+    height: 60px;
+    top: 11%;
+}
+
+.search-car {
+    border-bottom: 1px solid #313131;
+}
+
 
 .carList {
     font-size: 24px;
@@ -52,22 +82,25 @@ body {
     color: #FC9D31;
     background-color: #fff;
     border: 1px solid #FC9D31;
-}
-.page-link {
-    color:  #FC9D31;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
 }
 
-nav:hover {
-    border: 2px purple;
+.page-link {
+    color: #FC9D31;
 }
+
 .navbar {
     padding: 0rem;
 }
+
 .nav-link {
     padding: 0;
 }
 
 
-.mycontent-left {
-    border-right: 1px dashed #333;
-  }
+
+
