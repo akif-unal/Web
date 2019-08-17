@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cabin:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
@@ -26,17 +25,17 @@
           </li>
           <li class="nav-item mt-1 mb-1 ">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Compass.png" class="img-fluid" alt="">
-              <p class="navbar-item-font" >Takip</p>
+              <p class="navbar-item-font">Takip</p>
             </a>
           </li>
           <li class="nav-item mt-1 mb-1">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Cars.png" class="img-fluid " alt="">
-              <p class="navbar-item-font" >Araç</p>
+              <p class="navbar-item-font">Araç</p>
             </a>
           </li>
           <li class="nav-item mt-1 mb-1">
             <a class="nav-link  mt-2" href="#"><img src="./icons/personnel.png" class="img-fluid" alt="">
-              <p class="navbar-item-font" >Personel</p>
+              <p class="navbar-item-font">Personel</p>
             </a>
           </li>
           <li class="nav-item mt-1 mb-1">
@@ -85,30 +84,29 @@
   </header>
 
   <section class="section-home">
-    <div class="container-fluid mt-4">
-
-      <div class="row mb-5 mt-4 d-flex align-items-center">
-        <div class="col-xl-3 pl-4">
-          <h4 class="font-weight-bold  carList ">Araç Listesi</h4>
+    <div class="container-fluid ">
+      <div class="row d-flex align-items-center home-row">
+        <div class="col-xl-3 pl-4 mt-3">
+          <h2 class="carList ">Araç Listesi</h2>
         </div>
 
-        <div class="col-xl-3 ">
+        <div class="col-xl-3 mt-3">
           <!-- ...-->
-          <p class=" d-inline-block p-2 text-black-50 search-car" style="width: 80%;">Araç ara...</p>
+          <p class=" d-inline-block p-2 text-black-50 search-car" style="width: 83%;">Araç ara...</p>
           <img src="/icons/SearchCar.png" alt="Search a car">
         </div>
 
-        <div class="col-xl-2  p-3 d-flex justify-content-between align-items-center"">
+        <div class="col-xl-2   d-flex justify-content-between align-items-center"">
           <div class=" card main-menu my-column w-100">
-            <div class="card-body d-flex justify-content-between align-items-center">
-             <img src="/icons/ListSquare.png" alt="Square view selection">
-              <div class="bracket"></div>
-              <img src="/icons/List.png" alt="">
-           </div>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <img src="/icons/ListSquare.png" alt="Square view selection">
+            <div class="bracket"></div>
+            <img src="/icons/List.png" alt="">
+          </div>
         </div>
       </div>
 
-      <div class="col-xl-2  p-3 d-flex justify-content-between align-items-center">
+      <div class="col-xl-2  d-flex justify-content-between align-items-center">
         <div class="card main-menu my-column w-100">
           <div class="card-body d-flex justify-content-between align-items-center">
             Filtre
@@ -117,7 +115,7 @@
         </div>
       </div>
 
-      <div class="col-xl-2   p-3 ">
+      <div class="col-xl-2 ">
         <div class="card main-menu my-column w-100 ">
           <div class="card-body d-flex justify-content-between align-items-center">
             Ekle <img src="/icons/plus.png " alt="Addition">
@@ -126,51 +124,70 @@
       </div>
     </div>
 
-
-
-    <div class="row ">
+    <div class="row home-row ">
       <div class="col-xl-4 ">
-        <div class="row main-menu my-column-secondRow mx-2  p-5 position-relative"> <img class="position-absolute"
-            style="z-index: 1" src="./icons/car1/Badge.png" alt=""><img style="z-index: 2; top: 37%; left: 12.3%;"
-            class="position-absolute" src="./icons/car1/car.png" alt=""> <img class="position-absolute"
-            src="./icons/car1/profile-oval.png" alt="">
-          <H3>34 ALP 123</H3>
-          <P class="text-secondary font-weight-normal">2014 A2 1.8 TFSI</P>
-          <P class="text-secondary font-weight-normal">Tahsis - Murat</P><img src="./icons/first-car-onroad.png"
-            alt=""><span>&#10217;</span>
+        <div class="row main-menu my-column-secondRow mx-2">
+          <div class="col-xl-2 display-relative">
+            <img class="img-badge" src="./icons/car1/Badge.png" alt="">
+            <img class="img-car" src="./icons/car1/car.png" alt="">
+            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+          </div>
+          <div class="col-xl-6 pl-4">
+            <h3>34 ALP 123</h3>
+            <h4>2014 A2 1.8 TFSI</h4>
+            <P >Tahsis - Murat</P>
+          </div>
+          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
+            <img src="./icons/first-car-onroad.png" alt="">
+            <img src="./icons/chevron right.png" alt="">
+          </div>
         </div>
       </div>
       <div class="col-xl-4  ">
-        <div class="row main-menu my-column-secondRow mx-2  p-5 position-relative h-100"> <img class="position-absolute"
-            style="z-index: 1" src="./icons/car1/Badge.png" alt=""><img style="z-index: 2; top: 37%; left: 12.3%;"
-            class="position-absolute" src="./icons/car1/car.png" alt="">
-          <img class="position-absolute" src="./icons/car1/profile-oval.png" alt="">
-          <H3 class="d-inline-block">34 PH 3158 </H3>
-          <P class="text-secondary font-weight-normal">2014 A2 1.8 TFSI</P>
-          <P class="text-secondary font-weight-normal">Havuz Aracı</P> <img class="d-inline-block"
-            src="./icons/car-onroad.png" alt=""><span>&#10217;</span>
+        <div class="row main-menu my-column-secondRow mx-2">
+          <div class="col-xl-2 ">
+            <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+            <img class="img-car" src="./icons/car1/car.png" alt="">
+            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+          </div>
+          <div class="col-xl-6 pl-4">
+            <h3 >34 PH 3158 </h3>
+            <h4>2014 A2 1.8 TFSI</h4>
+            <P >Havuz Aracı</P>
+          </div>
+          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
+            <img class="d-inline-block" src="./icons/car-onroad.png" alt="">
+            <img src="./icons/chevron right.png" alt="">
+          </div>
         </div>
 
       </div>
       <div class="col-xl-4 ">
-        <div class="row main-menu my-column-secondRow mx-2  p-5 position-relative h-100"> <img class="position-absolute"
-            style="z-index: 1" src="./icons/car1/Badge.png" alt=""><img style="z-index: 2; top: 37%; left: 12.3%;"
-            class="position-absolute" src="./icons/car1/car.png" alt="">
-          <img class="position-absolute" src="./icons/car1/profile-oval.png" alt="">
-          <H3>34 PH 3158</H3>
-          <P class="text-secondary font-weight-normal">2014 A2 1.8 TFSI</P>
-          <P class="text-secondary font-weight-normal">Havuz Aracı </P> <img src="./icons/car in map.png"
-            alt=""><span>&#10217;</span>
+        <div class="row main-menu my-column-secondRow mx-2">
+          <div class="col-xl-2">
+            <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+            <img class="img-car" src="./icons/car1/car.png" alt="">
+            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+          </div>
+          <div class="col-xl-6 pl-4">
+            <h3>34 PH 3158</h3>
+            <h4 >2014 A2 1.8 TFSI</h4>
+            <P >Havuz Aracı </P>
+          </div>
+          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
+            <img src="./icons/car in map.png" alt="">
+            <img src="./icons/chevron right.png" alt="">
+          </div>
         </div>
       </div>
     </div>
     </div>
 
-    <div class="row justify-content-center mt-4 ">
+    <div class="row justify-content-center home-row">
       <nav aria-label="Page navigation example ">
         <ul class="pagination pagination-lg" id="my-pagination">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <a class="page-link pagination-back-forward" href="#" aria-label="Previous">
               <img src="./icons/che-left.png" alt="">
             </a>
           </li>
@@ -180,7 +197,7 @@
           <li class="page-item"><a class="page-link" href="#">25</a></li>
           <li class="page-item"><a class="page-link" href="#">26</a></li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <a class="page-link pagination-back-forward" href="#" aria-label="Next">
               <img src="./icons/chevron right.png" alt="">
             </a>
           </li>
