@@ -18,52 +18,52 @@
       <a class="navbar-brand test-navbar" href="#"><img src="./icons/Brand Logo.png" class="img-fluid" alt=""></a>
       <div class="collapse navbar-collapse ">
         <ul class="navbar-nav mr-auto text-center ">
-          <li class="nav-item navbar-border-left mt-1 mb-1 ">
-            <a class="nav-link mx-2 mt-2 " href="#"><img src="./icons/Vector.png" class="img-fluid " alt="">
+          <li class="nav-item navbar-border-left d-flex justify-content-center align-items-center ">
+            <a class="nav-link mt-2 " href="#"><img src="./icons/Vector.png" class="img-fluid " alt="">
               <p class="navbar-item-font">Özet</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1 ">
+          <li class="nav-item border-right d-flex justify-content-center align-items-center  ">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Compass.png" class="img-fluid" alt="">
               <p class="navbar-item-font">Takip</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center ">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Cars.png" class="img-fluid " alt="">
               <p class="navbar-item-font">Araç</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center ">
             <a class="nav-link  mt-2" href="#"><img src="./icons/personnel.png" class="img-fluid" alt="">
               <p class="navbar-item-font">Personel</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-1 mt-2" href="#"><img src="./icons/Road.png" class="img-fluid" alt="">
               <p class="navbar-item-font"> Aktivite</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Task.png" class="img-fluid" alt="">
               <p class="navbar-item-font"> Görev</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Report.png" class="img-fluid" alt="">
               <p class="navbar-item-font"> Rapor</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Car.png" class="img-fluid" alt="">
               <p class="navbar-item-font">Filo</p>
             </a>
           </li>
-          <li class="nav-item mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Compare.png" class="img-fluid" alt="">
               <p class="navbar-item-font">Kıyasla</p>
             </a>
           </li>
-          <li class="nav-item  mt-1 mb-1">
+          <li class="nav-item d-flex justify-content-center align-items-center">
             <a class="nav-link mx-1 mt-2" href="#"><img src="./icons/Management.png" class="img-fluid" alt="">
               <p class="navbar-item-font">Yönetim</p>
             </a>
@@ -85,126 +85,148 @@
 
   <section class="section-home">
     <div class="container-fluid ">
-      <div class="row d-flex align-items-center home-row">
+      <div class="row  home-row">
         <div class="col-xl-3 pl-4 mt-3">
           <h2 class="carList ">Araç Listesi</h2>
         </div>
 
-        <div class="col-xl-3 mt-3">
-          <!-- ...-->
-          <p class=" d-inline-block p-2 text-black-50 search-car" style="width: 83%;">Araç ara...</p>
-          <img src="/icons/SearchCar.png" alt="Search a car">
+        <div class="col-xl-3 mt-3 ">
+          <input class="search-car" name="search-car" type="text"
+            style="border: none; border-bottom: 1px solid #313131;" placeholder="Araç ara...">
+          <a href="#"><img src="/icons/SearchCar.png" alt="Search a car"></a>
         </div>
 
-        <div class="col-xl-2   d-flex justify-content-between align-items-center"">
-          <div class=" card main-menu my-column w-100">
-          <div class="card-body d-flex justify-content-between align-items-center">
-            <img src="/icons/ListSquare.png" alt="Square view selection">
+        <div class="col-xl-2">
+          <div class="btn-group main-menu my-column w-100 align-items-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn "><img src="/icons/ListSquare.png" alt="Square view selection"></button>
             <div class="bracket"></div>
-            <img src="/icons/List.png" alt="">
+            <button type="button" class="btn "><img src="/icons/List.png" alt=""></button>
           </div>
         </div>
-      </div>
 
-      <div class="col-xl-2  d-flex justify-content-between align-items-center">
-        <div class="card main-menu my-column w-100">
-          <div class="card-body d-flex justify-content-between align-items-center">
-            Filtre
-            <img src="/icons/filter.png" alt="Filter icon">
+        <div class="col-xl-2">
+          <div class="btn-group main-menu my-column w-100 p-1" role="group" aria-label="Basic example">
+            <button type="button " class="btn text-left">Filtre</button>
+            <button type="button" class="btn text-right"><img src="/icons/filter.png" alt="Filter icon"></button>
           </div>
         </div>
-      </div>
 
-      <div class="col-xl-2 ">
-        <div class="card main-menu my-column w-100 ">
-          <div class="card-body d-flex justify-content-between align-items-center">
-            Ekle <img src="/icons/plus.png " alt="Addition">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row home-row ">
-      <div class="col-xl-4 ">
-        <div class="row main-menu my-column-secondRow mx-2">
-          <div class="col-xl-2 display-relative">
-            <img class="img-badge" src="./icons/car1/Badge.png" alt="">
-            <img class="img-car" src="./icons/car1/car.png" alt="">
-            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
-          </div>
-          <div class="col-xl-6 pl-4">
-            <h3>34 ALP 123</h3>
-            <h4>2014 A2 1.8 TFSI</h4>
-            <P >Tahsis - Murat</P>
-          </div>
-          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
-            <img src="./icons/first-car-onroad.png" alt="">
-            <img src="./icons/chevron right.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4  ">
-        <div class="row main-menu my-column-secondRow mx-2">
-          <div class="col-xl-2 ">
-            <img class="img-badge " src="./icons/car1/Badge.png" alt="">
-            <img class="img-car" src="./icons/car1/car.png" alt="">
-            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
-          </div>
-          <div class="col-xl-6 pl-4">
-            <h3 >34 PH 3158 </h3>
-            <h4>2014 A2 1.8 TFSI</h4>
-            <P >Havuz Aracı</P>
-          </div>
-          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
-            <img class="d-inline-block" src="./icons/car-onroad.png" alt="">
-            <img src="./icons/chevron right.png" alt="">
+        <div class="col-xl-2 ">
+          <div class="btn-group main-menu my-column w-100 p-1" role="group" aria-label="Basic example">
+            <button type="button" class="btn text-left">Ekle</button>
+            <button type="button" class="btn text-right"><img src="/icons/plus.png " alt="Addition"></button>
           </div>
         </div>
 
       </div>
-      <div class="col-xl-4 ">
-        <div class="row main-menu my-column-secondRow mx-2">
-          <div class="col-xl-2">
-            <img class="img-badge " src="./icons/car1/Badge.png" alt="">
-            <img class="img-car" src="./icons/car1/car.png" alt="">
-            <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+
+
+      <div class="row home-row ">
+        <!-- <div class="col-xl-4 ">
+          <div class="row main-menu my-column-secondRow mx-2">
+            <div class="col-xl-2 ">
+              <img class="img-badge" src="./icons/car1/Badge.png" alt="">
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+              <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+            </div>
+            <div class="col-xl-6 ">
+              <h3>34 ALP 123</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Tahsis - Murat</P>
+            </div>
+            <div class="col-xl-4 d-flex align-items-center ">
+              <img src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right" src="./icons/chevron right.png" alt="">
+            </div>
           </div>
-          <div class="col-xl-6 pl-4">
-            <h3>34 PH 3158</h3>
-            <h4 >2014 A2 1.8 TFSI</h4>
-            <P >Havuz Aracı </P>
+        </div> -->
+
+        <div class="col-xl-4 ">
+          <div class="card main-menu my-column-secondRow mx-1 display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+              <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right" src="./icons/chevron right.png" alt="">
+            </div>
+
+            <div class="card-body" style="padding-left: 27%;">
+              <h3>34 ALP 123</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Tahsis - Murat</P>
+            </div>
+
           </div>
-          <div class="col-xl-4 pl-4 d-flex align-items-center justify-content-between">
-            <img src="./icons/car in map.png" alt="">
-            <img src="./icons/chevron right.png" alt="">
+        </div>
+
+        <div class="col-xl-4 ">
+          <div class="card main-menu my-column-secondRow mx-1 display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+              <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right" src="./icons/chevron right.png" alt="">
+            </div>
+            <div class="card-body" style="padding-left: 27%;">
+              <h3>34 PH 3158</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Havuz Aracı</P>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 ">
+          <div class="card main-menu my-column-secondRow mx-1 display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+              <img class="img-oval-background" src="./icons/car1/profile-oval.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right" src="./icons/chevron right.png" alt="">
+            </div>
+            <div class="card-body" style="padding-left: 27%;">
+              <h3>34 PH 3158</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Havuz Aracı </P>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
 
-    <div class="row justify-content-center home-row">
-      <nav aria-label="Page navigation example ">
-        <ul class="pagination pagination-lg" id="my-pagination">
-          <li class="page-item">
-            <a class="page-link pagination-back-forward" href="#" aria-label="Previous">
-              <img src="./icons/che-left.png" alt="">
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">10</a></li>
-          <li class="page-item"><a class="page-link" href="#">11</a></li>
-          <li class="page-item"><a class="page-link" href="#">...</a></li>
-          <li class="page-item"><a class="page-link" href="#">25</a></li>
-          <li class="page-item"><a class="page-link" href="#">26</a></li>
-          <li class="page-item">
-            <a class="page-link pagination-back-forward" href="#" aria-label="Next">
-              <img src="./icons/chevron right.png" alt="">
-            </a>
-          </li>
-        </ul>
-      </nav>
+
+      <div class="row justify-content-center home-row">
+        <nav aria-label="Page navigation example ">
+          <ul class="pagination pagination-lg" id="my-pagination">
+            <li class="page-item">
+              <a class="page-link pagination-back-forward" href="#" aria-label="Previous">
+                <img src="./icons/che-left.png" alt="">
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">25</a></li>
+            <li class="page-item"><a class="page-link" href="#">26</a></li>
+            <li class="page-item">
+              <a class="page-link pagination-back-forward" href="#" aria-label="Next">
+                <img src="./icons/chevron right.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </section>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>

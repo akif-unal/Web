@@ -43,6 +43,10 @@ header {
     border-left: 1px solid #EEEEEE;
 }
 
+.nav-item {
+    width: 70px;
+}
+
 /*    ----------HEADINGS--------- */
 
 h3 {
@@ -65,7 +69,7 @@ h4 {
     color: #9B9B9B;
 }
 
-.col-xl-6 p {
+.card-body p {
     color: #9B9B9B;
 }
 
@@ -80,16 +84,24 @@ h4 {
 .my-column {
     background: #FFFFFF;
     border-radius: 10px;
+    height: 60px;
 }
 
-.my-column .card-body {
-    padding: 15px;
+.my-column-left {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
+
+.my-column-right {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
 
 .bracket {
     display: inline-block;
     border-right: 2px solid #9B9B9B;
-    height: 30px;
+    height: 50px;
     margin: 0 auto;
 }
 
@@ -101,11 +113,6 @@ h4 {
     top: 11%;
 }
 
-.search-car {
-    border-bottom: 1px solid #313131;
-}
-
-
 .carList {
     font-size: 24px;
     line-height: 30px;
@@ -114,7 +121,6 @@ h4 {
 .my-column-secondRow {
     background: #FFFFFF;
     border-radius: 8px;
-    padding: 4% 
 }
 
 .my-column-secondRow h3 {
@@ -125,11 +131,37 @@ h4 {
     margin-bottom: 4px;
 }
 
+.my-column-secondRow .col-xl-4 {
+    padding-left: 13%;
+}
+
+.col-xl-4 .card .card-body {
+    padding: 15px;
+}
+
+.first-car-onroad {
+    top: 2.44em;
+    z-index: 3;
+    right: 4em;
+    position: absolute;
+}
+
+.img-chevron-right {
+    top: 2.44em;
+    z-index: 3;
+    right: 1.5em;
+    position: absolute;
+}
+
+.inline {
+    display: inline;
+}
+
 .form-control-with-icon {
     border: 1px solid #313131;
 }
 
-.pagination-lg .page-link  {
+.pagination-lg .page-link {
     font-family: Cabin;
     font-weight: normal;
     font-size: 14px;
@@ -160,23 +192,39 @@ h4 {
 
 /* -------------------- IMAGES ----------------- */
 
+
 .img-badge {
-    top: 0.4em;
+    top: 1.47em;
     z-index: 3;
-    left: 0%;
+    left: 1.59em;
     position: absolute;
 }
 
 .img-car {
     position: absolute;
-    top: 1.05em;
-    left: 1.16em;
+    top: 2.1em;
+    left: 2.35em;
     z-index: 2;
 }
 
 .img-oval-background {
     position: absolute;
     z-index: 1;
-    padding-top: 0.5em;
-    left: 10%;
+    top: 1.5em;
+    left: 1.58em;
+}
+
+
+
+/* -------------------- INPUT ----------------- */
+
+input {
+    text-indent: 0.6em;
+    padding-bottom: 8px;
+    color: #9B9B9B;
+    width: calc(100% - 44px);
+}
+
+input[type=text]:focus {
+    color: #313131;
 }
