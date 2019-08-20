@@ -30,6 +30,9 @@ header {
     margin-top: 1px;
 }
 
+
+/*    ----------NAVBAR--------- */
+
 .navbar-item-font {
     color: black;
     margin-bottom: 0.5rem;
@@ -47,7 +50,31 @@ header {
     width: 70px;
 }
 
+.navbar-light .navbar-toggler {
+    border: 0;
+    color: #e91313;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../icons/hamburger-menu.png);
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    margin-left: 18px;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
 /*    ----------HEADINGS--------- */
+
+h2,h3,h4 {
+    font-weight: 700;
+}
 
 h3 {
     font-family: Cabin;
@@ -103,14 +130,14 @@ h4 {
 }
 
 
-.bracket-new{
+.bracket-new {
     display: inline-block;
     border-right: 2px solid #9B9B9B;
     height: 50px;
     margin: 0 auto;
 }
 
-.bracket{
+.bracket {
     display: inline-block;
     border-right: 1px solid rgba(238, 238, 238, 0.5);
     height: 60px;
@@ -197,6 +224,7 @@ h4 {
     height: 60px;
     width: 60px;
 }
+
 .pagination-lg .page-item:last-child .page-link {
     border-radius: 0px 4px 4px 0px;
     height: 60px;
@@ -262,4 +290,98 @@ input {
 
 input[type=text]:focus {
     color: #313131;
+}
+
+@media (min-width: 320px) {
+    .hidden-img {
+        display: flex;
+        align-self: center;
+        padding-right: 15px;
+    }
+    .navbar-toggler-icon {
+        margin-left: 0;
+    }
+    .navbar-toggler {
+        padding-left: 15px;
+    }
+    .home-row{
+        margin-top: 0px;
+    }
+    .col-xl-4{
+        margin-top: 30px;
+    }
+    .row .pagination{
+        margin-top: 30px;
+    }
+    .col-6 {
+        margin-top:21px;
+    }
+    .first-car-onroad {
+        top: 2.44em;
+        z-index: 3;
+        right: 1.2em;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        margin: 0 auto;
+    }
+
+    .img-circular-profile {
+        visibility: visible;
+    }
+    .home-row {
+        margin-top: 30px;
+    }
+    .col-xl-4{
+        margin-top: 0px;
+    }
+    .row .pagination{
+        margin-top: 0px;
+    }
+    .col-6 {
+        margin-top:0px;
+    }
+    .first-car-onroad {
+        top: 2.44em;
+        z-index: 3;
+        right: 4em;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .hidden-img {
+        visibility: visible;
+        display: flex;
+        align-self: center;
+        padding-right: 30px;
+    }
+
+    .col-xl-4:last-of-type {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 960px) {
+    .navbar-brand {
+        margin-right: 1rem;
+        margin-left: 15px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .hidden-img {
+        visibility: hidden;
+    }
+
+    .col-xl-4:last-of-type {
+        margin-top: 0px;
+    }
+
 }
