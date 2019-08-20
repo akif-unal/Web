@@ -35,9 +35,9 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.navbar-nav li {
-    border-right: 1px solid #EEEEEE;
-}
+/* .navbar-nav li {
+    border-right: 1px solid rgba(238, 238, 238, 0.5);
+} */
 
 .navbar-border-left {
     border-left: 1px solid #EEEEEE;
@@ -69,6 +69,10 @@ h4 {
     color: #9B9B9B;
 }
 
+.col-xl-4 .card-body {
+    max-height: 110px;
+}
+
 .card-body p {
     color: #9B9B9B;
 }
@@ -79,6 +83,7 @@ h4 {
 
 .home-row {
     margin-top: 30px;
+    vertical-align: middle;
 }
 
 .my-column {
@@ -98,10 +103,17 @@ h4 {
 }
 
 
-.bracket {
+.bracket-new{
     display: inline-block;
     border-right: 2px solid #9B9B9B;
     height: 50px;
+    margin: 0 auto;
+}
+
+.bracket{
+    display: inline-block;
+    border-right: 1px solid rgba(238, 238, 238, 0.5);
+    height: 60px;
     margin: 0 auto;
 }
 
@@ -167,10 +179,29 @@ h4 {
     font-size: 14px;
     line-height: 18px;
     padding: 21px;
+    height: 60px;
+    width: 60px;
+}
+
+.pagination-lg .page-link:hover {
+    background: #EEEEEE;
+    color: #9B9B9B;
 }
 
 .pagination-lg .pagination-back-forward {
     padding: 15px 22px;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+    border-radius: 4px 0px 0px 4px;
+    height: 60px;
+    width: 60px;
+}
+.pagination-lg .page-item:last-child .page-link {
+    border-radius: 0px 4px 4px 0px;
+    height: 60px;
+    width: 60px;
+
 }
 
 
@@ -194,25 +225,29 @@ h4 {
 
 
 .img-badge {
-    top: 1.47em;
+    top: 1.56em;
     z-index: 3;
-    left: 1.59em;
+    left: 1.1em;
     position: absolute;
 }
 
 .img-car {
     position: absolute;
-    top: 2.1em;
-    left: 2.35em;
+    top: 2.2em;
+    left: 1.68em;
     z-index: 2;
 }
 
-.img-oval-background {
+.car-bg {
     position: absolute;
-    z-index: 1;
-    top: 1.5em;
-    left: 1.58em;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #E8E8E8;
+    top: 1.6em;
+    left: 1.01em;
 }
+
 
 
 
