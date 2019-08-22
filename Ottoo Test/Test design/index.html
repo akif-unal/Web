@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin:500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl  navbar-light main-menu ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand test-navbar" href="#"><img src="./icons/Brand Logo.png" class="d-none d-md-block"
+          alt=""><img src="./icons/Brand Logo Icon-sm.png" class="d-md-none" alt=""> </a>
+      <img src="./icons/Profile.png" class="hidden-img d-xl-none" alt="">
+      <div class="collapse navbar-collapse ">
+        <ul class="navbar-nav mr-auto text-center d-flex align-items-center">
+          <li class="nav-item navbar-border-left d-flex justify-content-center align-items-center ">
+            <a class="nav-link mt-2 " href="#"><img src="./icons/Vector.png" class="img-fluid " alt="">
+              <p class="navbar-item-font">Özet</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item  d-flex justify-content-center align-items-center  ">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Compass.png" class="img-fluid" alt="">
+              <p class="navbar-item-font">Takip</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center ">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Cars.png" class="img-fluid " alt="">
+              <p class="navbar-item-font">Araç</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center ">
+            <a class="nav-link  mt-2" href="#"><img src="./icons/personnel.png" class="img-fluid" alt="">
+              <p class="navbar-item-font">Personel</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-1 mt-2" href="#"><img src="./icons/Road.png" class="img-fluid" alt="">
+              <p class="navbar-item-font"> Aktivite</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Task.png" class="img-fluid" alt="">
+              <p class="navbar-item-font"> Görev</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Report.png" class="img-fluid" alt="">
+              <p class="navbar-item-font"> Rapor</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Car.png" class="img-fluid" alt="">
+              <p class="navbar-item-font">Filo</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-2 mt-2" href="#"><img src="./icons/Compare.png" class="img-fluid" alt="">
+              <p class="navbar-item-font">Kıyasla</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+          <li class="nav-item d-flex justify-content-center align-items-center">
+            <a class="nav-link mx-1 mt-2" href="#"><img src="./icons/Management.png" class="img-fluid" alt="">
+              <p class="navbar-item-font">Yönetim</p>
+            </a>
+          </li>
+          <div class="bracket"></div>
+        </ul>
+        <ul class="navbar-nav  d-flex align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link mx-2" href="#"><img src="./icons/search.png" alt=""></a>
+          </li>
+          <div class="bracket"></div>
+          <li>
+            <a class="nav-link mx-2" href="#"><img src="./icons/Profile.png" class="img-fluid rounded-circle"
+                alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-home">
+    <div class="container-fluid ">
+      <div class="row  home-row">
+        <div class="col-md-3 pl-4 col-sm-6 col-6 d-flex align-items-center">
+          <h2 class="carList ">Araç Listesi</h2>
+        </div>
+
+        <div class="col-md-3  col-sm-6 col-6 d-flex align-items-center">
+          <input name="search-car" type="text" style="border: none; border-bottom: 1px solid #313131;"
+            placeholder="Araç ara...">
+          <a href="#" style="padding-left: 8px;"><img src="/icons/SearchCar.png" alt="Search a car"></a>
+        </div>
+
+        <div class=" col-md-2 col-sm-6 col-6 d-none d-md-block">
+          <div class="btn-group main-menu my-column w-100 align-items-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn "><img src="/icons/ListSquare.png" alt="Square view selection"></button>
+            <div class="bracket-new"></div>
+            <button type="button" class="btn "><img src="/icons/List.png" alt=""></button>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6 col-6">
+          <div class="btn-group main-menu my-column w-100 p-1 " role="group" aria-label="Basic example">
+
+            <button type="button" class="btn text-right">
+              <span class="float-left pt-1">Filtre</span> <img src="/icons/filter.png" alt="Filter icon">
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6 col-6">
+          <div class="btn-group main-menu my-column w-100 p-1" role="group" aria-label="Basic example">
+
+            <button type="button" class="btn text-right"><span class="float-left pt-1">Ekle</span><img
+                src="/icons/plus.png " alt="Addition"></button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row home-row ">
+
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <div class="card main-menu my-column-secondRow  display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <div class="car-bg"></div>
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right d-none d-md-block" src="./icons/chevron right.png" alt="">
+            </div>
+
+            <div class="card-body" style="padding-left: 85px; max-height: 110px;">
+              <h3>34 ALP 123</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Tahsis - Murat</P>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <div class="card main-menu my-column-secondRow display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <div class="car-bg"></div>
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right d-none d-md-block" src="./icons/chevron right.png" alt="">
+            </div>
+            <div class="card-body" style="padding-left: 85px;">
+              <h3>34 PH 3158</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Havuz Aracı</P>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <div class="card main-menu my-column-secondRow display-relative">
+            <div>
+              <img class="img-badge " src="./icons/car1/Badge.png" alt="">
+              <div class="car-bg"></div>
+              <img class="img-car" src="./icons/car1/car.png" alt="">
+            </div>
+            <div class="d-flex align-items-center ">
+              <img class="first-car-onroad" src="./icons/first-car-onroad.png" alt="">
+              <img class="img-chevron-right d-none d-md-block" src="./icons/chevron right.png" alt="">
+            </div>
+            <div class="card-body" style="padding-left: 85px;">
+              <h3>34 PH 3158</h3>
+              <h4>2014 A2 1.8 TFSI</h4>
+              <P>Havuz Aracı </P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center home-row">
+        <nav aria-label="Page navigation example " class="d-none d-md-block">
+          <ul class="pagination pagination-lg" id="my-pagination">
+            <li class="page-item">
+              <a class="page-link pagination-back-forward d-flex justify-content-center" href="#" aria-label="Previous">
+                <img src="./icons/che-left.png" alt="">
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">25</a></li>
+            <li class="page-item"><a class="page-link" href="#">26</a></li>
+            <li class="page-item">
+              <a class="page-link pagination-back-forward d-flex justify-content-center" href="#" aria-label="Next">
+                <img src="./icons/chevron right.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav aria-label="Page navigation example " class="d-md-none">
+            <ul class="pagination pagination-lg" id="my-pagination">
+              <li class="page-item">
+                <a class="page-link pagination-back-forward d-flex justify-content-center" href="#" aria-label="Previous">
+                  <img src="./icons/che-left.png" alt="">
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item"><a class="page-link" href="#">4,127</a></li>
+              <li class="page-item">
+                <a class="page-link pagination-back-forward d-flex justify-content-center" href="#" aria-label="Next">
+                  <img src="./icons/chevron right.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
