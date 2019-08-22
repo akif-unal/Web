@@ -6,41 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Figma</title>
-    <link rel="stylesheet" href="./styles/css/custom.css">
+    <link rel="stylesheet" href="./scss/custom.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <section class="colors">
+            <h2>Colours</h2>
             <div class="row">
-                <div class="bg-dark"></div>
-                <div class="bg-secondary"></div>
-                <div class="bg-warning"></div>
-                <div class="bg-light"></div>
-                <div class="bg-warning-light"></div>
-                <div class="bg-info"></div>
-                <div class="bg-dark2"></div>
-                <div class="bg-primary"></div>
-                <div class="bg-danger"></div>
-                <div class="bg-success"></div>
-                <div class="bg-light2"></div>
-                <div class="bg-secondary-light"></div>
+                <div class="bg-gray-700 color-row1"> gray-700</div>
+                <div class="bg-gray-600 color-row1">gray-600</div>
+                <div class="bg-primary color-row1">primary</div>
+                <div class="bg-light color-row1">gray-100</div>
+                <div class="bg-warning color-row1">warning</div>
+                <div class="bg-info color-row1">info</div>
+                <div class="bg-brown color-row1">brown</div>
+                <div class="bg-info-dark color-row1">info-dark</div>
+                <div class="bg-danger color-row1">danger</div>
+                <div class="bg-success color-row1">success</div>
+                <div class="bg-white color-row1">light</div>
+                <div class="bg-gray-400 color-row1">gray-400</div>
             </div>
+
             <div class="row">
-                <div class="bg-dark"></div>
+                <div class="bg-dark color-row2 text-white">dark</div>
+                <div class="color-row2"></div>
+                <div class="bg-primary-dark color-row2">orange-dark</div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="bg-danger-dark color-row2">red-dark</div>
+                <div class="bg-success-dark color-row2">green-dark</div>
+                <div class="bg-gray-300 color-row2">gray-300</div>
+            </div>
+
+            <div class="row">
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="bg-primary-light color-row2">orange-light</div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="color-row2"></div>
+                <div class="bg-danger-light color-row2">red-light</div>
+                <div class="bg-success-light color-row2">green-light</div>
             </div>
         </section>
 
         <section class="typography">
+                <h2>Typography</h2>
             <div class="row">
 
             </div>
         </section>
 
         <section class="buttons">
-            <div class="row">
-
+            <h2>Buttons</h2>
+            <div class="row p-4">
+                    <button type="button" class="btn shadow text-primary" >btn</button>
+                    <button type="button" class="btn btn-sm shadow text-primary ml-4" >btn-sm</button>
+                    <button type="button" class="btn btn-xs shadow text-primary ml-4" >btn-xs</button>
+                    <button type="button" class="btn btn-xs shadow text-primary ml-4" >Photo</button>
+                    <button type="button" class="btn shadow text-primary ml-4" >btn-tag</button>
+                    <button type="button" class="btn shadow text-primary ml-4" >square</button>
             </div>
+            <link href="https://fonts.googleapis.com/css?family=Cabin:500,600,700&display=swap" rel="stylesheet">
+            <div class="row">
+                    <button type="button" class="btn btn-primary shadow text-white" >btn-primary</button>
+                    <button type="button" class="btn btn-secondary shadow text-primary" >btn-secondary</button>
+                    <button type="button" class="btn btn-dark shadow text-primary" >btn-dark</button>
+                    <button type="button" class="btn btn-danger shadow " >btn-danger</button>
+                    <button type="button" class="btn btn-success shadow " >btn-success</button>
+            </div>
+
+            <div class="row">
+                    <button type="button" class="btn btn-warning shadow text-white" >Departman Ekle</button>
+                    <button type="button" class="btn btn-secondary shadow text-warning" >Departman Ekle</button>
+                    <button type="button" class="btn btn-dark shadow text-warning" >Departman Ekle</button>
+                    <button type="button" class="btn bg-danger-dark shadow text-white" >Departman Ekle</button>
+                    <button type="button" class="btn bg-success-dark shadow text-white" >Departman Ekle</button>
+            </div>
+
+            <div class="row">
+                    <button type="button" class="btn bg-primary-dark shadow text-white" >Departman Ekle</button>
+                    <button type="button" class="btn bg-gray-300 shadow text-primary" >Departman Ekle</button>
+                    <button type="button" class="btn bg-gray-900 shadow text-primary" >Departman Ekle</button>
+                    <button type="button" class="btn bg-danger-light shadow text-white" >Departman Ekle</button>
+                    <button type="button" class="btn bg-success-light shadow text-white" >Departman Ekle</button>
+            </div>
+
+            <div class="row">
+                    <button type="button" class="btn shadow bg-primary-light text-white" >Departman Ekle</button>
+                    <button type="button" class="btn shadow bg-gray-300 text-secondary" >Departman Ekle</button>
+                    <button type="button" class="btn shadow bg-gray-300 text-secondary" >Departman Ekle</button>
+            </div>
+
         </section>
 
         <section class="cards">

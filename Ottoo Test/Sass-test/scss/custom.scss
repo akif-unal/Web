@@ -1,3 +1,174 @@
 //Variable overrides here
-$enable-gradients: true;
+// $enable-gradients: true;
 
+
+/*  ---------Color variables----- */
+$background-color: #D8D8D8;
+$white:    #FFFFFF;
+$gray-100: #FBFBFB;
+$gray-300: #EEEEEE;
+$gray-400: #E8E8E8;
+$gray-600: #9B9B9B;
+$gray-700: #333333;
+$gray-900: #131313;
+$primary: #FC9D31;
+$primary-dark: #E88B22;
+$primary-light: #FBD2A3;
+$yellow: #FFC040;
+$info: #337AB7;
+$info-dark: #16738F;
+$brown: #8B572A;
+$danger: #D0021B;
+$danger-dark: #DA4052;
+$danger-dark-light: #EEB1B8;
+$success: #417505;
+$success-dark: #669036;
+$success-light: #C3D2B1;
+$secondary: $white;
+$dark: $gray-900;
+
+@mixin btn-color($font-color,$background-color-test) {
+    color: $font-color;
+    background-color: $background-color-test;
+}
+
+
+
+$width-row : 100px;
+$btn-width: 200px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:500,600,700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+/*  ---------- Color row sizes--------  */
+
+.color-row1 {
+    width: $width-row ;
+    height: 100px;
+    margin: 17px 30px 17px 30px;
+}
+
+.color-row2 {
+    width: $width-row ;
+    height: 50px;
+    margin: 10px 30px 10px 30px;
+}
+
+/* ---------- Colors --------------*/
+
+.bg-gray-900 {
+    background-color: $gray-900;
+}
+
+.bg-gray-700 {
+    background-color: $gray-700;
+}
+
+.bg-gray-600 {
+    background-color: $gray-600;
+}
+
+.bg-gray-400 {
+    background-color: $gray-400;
+}
+
+.bg-gray-300 {
+    background-color: $gray-300;
+}
+
+.bg-primary-dark {
+    background-color: $primary-dark;
+}
+.bg-primary-light {
+    background-color: $primary-light;
+}
+
+.bg-info-dark {
+    background-color: $info-dark;
+}
+
+.bg-brown {
+    background-color: $brown;
+}
+
+.bg-danger-dark {
+    background-color:  $danger-dark;
+    
+}
+.bg-danger-light {
+    background-color:  $danger-dark-light;
+    
+}
+.bg-success-dark {
+    background-color: $success-dark;
+   
+}
+.bg-success-light {
+    background-color: $success-light;
+   
+}
+
+/* -------------------Buttons--------------- */
+
+.btn {
+    width: $btn-width;
+    height: 60px;
+    border-radius: 10px;   /* ezemedim*/
+    margin: 2px 55px 2px 27px;
+    font-weight: bold;
+}
+
+.btn-sm {
+    width: $btn-width;
+    height: 50px;
+}
+
+.btn-xs {
+    width: $btn-width;
+    height: 40px;
+}
+
+.btn-primary:hover {
+    @include btn-color($white, $yellow);
+}
+.btn-primary:active {
+    @include btn-color($white, $primary-dark);
+}
+.btn-primary:disabled {
+    @include btn-color($white, $primary-light);
+}
+
+
+.btn-secondary:hover {
+    @include btn-color($white, $white);
+}
+.btn-secondary:active {
+    @include btn-color($white, $gray-300);
+}
+.btn-secondary:disabled {
+    @include btn-color($white, $gray-300);
+}
+
+.btn-dark {
+    background-color: $gray-700;
+}
+
+.btn-dark:active {
+    background-color: $gray-900;
+}
+
+/* --------------------Font colors-------------- */
+
+.text-primary {
+    color: $primary;
+    border-radius: 8px;
+}
+
+.text-secondary {
+    color: $gray-600 !important;
+}
