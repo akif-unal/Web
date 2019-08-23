@@ -3,21 +3,29 @@
 
 
 /*  ---------Color variables----- */
+
+$white: #FFFFFF;
+$yellow: #FFC040;
+$brown: #8B572A;
+
+$grays: (
+    "100": #FBFBFB,
+    "300": #EEEEEE,
+    "400": #E8E8E8,
+    "600": #9B9B9B,
+    "700": #333333,
+    "900": #131313
+)
+
+
 $background-color: #D8D8D8;
-$white:    #FFFFFF;
-$gray-100: #FBFBFB;
-$gray-300: #EEEEEE;
-$gray-400: #E8E8E8;
-$gray-600: #9B9B9B;
-$gray-700: #333333;
-$gray-900: #131313;
+
+
 $primary: #FC9D31;
 $primary-dark: #E88B22;
 $primary-light: #FBD2A3;
-$yellow: #FFC040;
 $info: #337AB7;
 $info-dark: #16738F;
-$brown: #8B572A;
 $danger: #D0021B;
 $danger-dark: #DA4052;
 $danger-dark-light: #EEB1B8;
@@ -27,7 +35,9 @@ $success-light: #C3D2B1;
 $secondary: $white;
 $dark: $gray-900;
 
-@mixin btn-color($font-color,$background-color-test) {
+
+
+@mixin btn-color($font-color, $background-color-test) {
     color: $font-color;
     background-color: $background-color-test;
 }
@@ -48,13 +58,13 @@ body {
 /*  ---------- Color row sizes--------  */
 
 .color-row1 {
-    width: $width-row ;
+    width: $width-row;
     height: 100px;
     margin: 17px 30px 17px 30px;
 }
 
 .color-row2 {
-    width: $width-row ;
+    width: $width-row;
     height: 50px;
     margin: 10px 30px 10px 30px;
 }
@@ -84,6 +94,7 @@ body {
 .bg-primary-dark {
     background-color: $primary-dark;
 }
+
 .bg-primary-light {
     background-color: $primary-light;
 }
@@ -97,20 +108,23 @@ body {
 }
 
 .bg-danger-dark {
-    background-color:  $danger-dark;
-    
+    background-color: $danger-dark;
+
 }
+
 .bg-danger-light {
-    background-color:  $danger-dark-light;
-    
+    background-color: $danger-dark-light;
+
 }
+
 .bg-success-dark {
     background-color: $success-dark;
-   
+
 }
+
 .bg-success-light {
     background-color: $success-light;
-   
+
 }
 
 /* -------------------Buttons--------------- */
@@ -118,7 +132,8 @@ body {
 .btn {
     width: $btn-width;
     height: 60px;
-    border-radius: 10px;   /* ezemedim*/
+    border-radius: 10px;
+    /* ezemedim*/
     margin: 2px 55px 2px 27px;
     font-weight: bold;
 }
@@ -136,9 +151,11 @@ body {
 .btn-primary:hover {
     @include btn-color($white, $yellow);
 }
+
 .btn-primary:active {
     @include btn-color($white, $primary-dark);
 }
+
 .btn-primary:disabled {
     @include btn-color($white, $primary-light);
 }
@@ -147,9 +164,11 @@ body {
 .btn-secondary:hover {
     @include btn-color($white, $white);
 }
+
 .btn-secondary:active {
     @include btn-color($white, $gray-300);
 }
+
 .btn-secondary:disabled {
     @include btn-color($white, $gray-300);
 }
