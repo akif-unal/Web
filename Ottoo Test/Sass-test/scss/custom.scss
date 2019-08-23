@@ -4,36 +4,46 @@
 
 /*  ---------Color variables----- */
 
+$primary: #FC9D31;
 $white: #FFFFFF;
-$yellow: #FFC040;
-$brown: #8B572A;
+$white-clicked: #EEEEEE;
+$secondary: #FFC040;
+$gray-700: #333333;
+$warning-passive: #EEB1B8;
+$primary-clicked: #E88B22;
+$primary-passive: #FBD2A3;
 
-$grays: (
-    "100": #FBFBFB,
-    "300": #EEEEEE,
+$colors: ("white":  $white,
+    "brown": #8B572A,
+    "white-clicked":  $white-clicked,
+    "bg":#FBFBFB,
+    "background-color": #D8D8D8,
+    "profile-background": #E8E8E8);
+
+
+$grays: ("100": #FBFBFB,
+    "300":  $white-clicked,
     "400": #E8E8E8,
     "600": #9B9B9B,
-    "700": #333333,
-    "900": #131313
-)
+    "700": $gray-700,
+    "900": #131313);
 
-
-$background-color: #D8D8D8;
-
-
-$primary: #FC9D31;
-$primary-dark: #E88B22;
-$primary-light: #FBD2A3;
-$info: #337AB7;
-$info-dark: #16738F;
-$danger: #D0021B;
-$danger-dark: #DA4052;
-$danger-dark-light: #EEB1B8;
-$success: #417505;
-$success-dark: #669036;
-$success-light: #C3D2B1;
-$secondary: $white;
-$dark: $gray-900;
+$theme-colors: ("bg": #FBFBFB,
+    "passive": #9B9B9B,
+    "primary": $primary,
+    "primary-clicked": $primary-clicked,
+    "primary-passive": $primary-passive,
+    "secondary": $secondary,
+    "active": #337AB7,
+    "map-abrupt": #8B572A,
+    "map-fuel": #16738F,
+    "warning": #D0021B,
+    "warning-hover": #DA4052,
+    "warning-passive": $warning-passive,
+    "okey": #417505,
+    "okey-hover": #669036,
+    "okey-passive": #C3D2B1,
+    "dark": #131313);
 
 
 
@@ -43,89 +53,108 @@ $dark: $gray-900;
 }
 
 
+/*  --------------------------
+        Typography 
+   ------------------------------*/
+$font-family-sans-serif: 'Cabin',
+sans-serif;
+$font-size-base: 1.6rem;
+
+/*   -------------Header-------------*/
+
+
+$h1-font-size: 3.6rem;
+$h2-font-size: 2.4rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.8rem;
+$h5-font-size: 1.6rem;
+$h6-font-size: 1.4rem;
+
+/*   ------------- Font-size -------------*/
+
+$font-size-lg: 1.8rem;
+$font-size-base: 1.6rem;
+$font-size-sm: 1.4rem;
+$font-size-xs: 1.2rem;
+
+
+/* ---------- Link colors ------------*/
+
+$link-color: $primary;
+$link-hover-color: $secondary;
+$link-hover-decoration: none;
+
+
+
+/*  ------------Body color -------*/
+
+$body-color: $gray-700;
+$body-bg: #FBFBFB;
+
+
+/* ---------- Buttons ------------*/
 
 $width-row : 100px;
 $btn-width: 200px;
 
+$btn-link-disabled-color: $white-clicked;
 
 @import url('https://fonts.googleapis.com/css?family=Cabin:500,600,700&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-body {
-    font-family: 'Cabin', sans-serif;
+:root {
+    font-size: 62.5%;
 }
+
+
+/* ---------- Colors --------------*/
+
+@each $gray-color,
+$value in $grays {
+    @include bg-variant(".bg-#{$gray-color}", $value);
+}
+
+@each $color,
+$value in $colors {
+    @include bg-variant(".bg-#{$color}", $value);
+}
+
+
+
+/*   ------------- Font-size -------------*/
+
+.size-lg {
+    font-size: $font-size-lg;
+}
+
+.size-base {
+    font-size: $font-size-base;
+}
+
+.size-sm {
+    font-size: $font-size-sm;
+}
+
+.size-xs {
+    font-size: $font-size-xs;
+}
+
+
 
 /*  ---------- Color row sizes--------  */
 
 .color-row1 {
     width: $width-row;
     height: 100px;
-    margin: 17px 30px 17px 30px;
+    margin: 17px 25px 17px 30px;
 }
 
 .color-row2 {
     width: $width-row;
     height: 50px;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 25px 10px 30px;
 }
 
-/* ---------- Colors --------------*/
-
-.bg-gray-900 {
-    background-color: $gray-900;
-}
-
-.bg-gray-700 {
-    background-color: $gray-700;
-}
-
-.bg-gray-600 {
-    background-color: $gray-600;
-}
-
-.bg-gray-400 {
-    background-color: $gray-400;
-}
-
-.bg-gray-300 {
-    background-color: $gray-300;
-}
-
-.bg-primary-dark {
-    background-color: $primary-dark;
-}
-
-.bg-primary-light {
-    background-color: $primary-light;
-}
-
-.bg-info-dark {
-    background-color: $info-dark;
-}
-
-.bg-brown {
-    background-color: $brown;
-}
-
-.bg-danger-dark {
-    background-color: $danger-dark;
-
-}
-
-.bg-danger-light {
-    background-color: $danger-dark-light;
-
-}
-
-.bg-success-dark {
-    background-color: $success-dark;
-
-}
-
-.bg-success-light {
-    background-color: $success-light;
-
-}
 
 /* -------------------Buttons--------------- */
 
@@ -133,7 +162,7 @@ body {
     width: $btn-width;
     height: 60px;
     border-radius: 10px;
-    /* ezemedim*/
+    color: $primary;
     margin: 2px 55px 2px 27px;
     font-weight: bold;
 }
@@ -148,46 +177,94 @@ body {
     height: 40px;
 }
 
-.btn-primary:hover {
-    @include btn-color($white, $yellow);
+.btn-primary {
+    @include button-variant($primary, $primary, $secondary, $secondary, $primary-clicked, $primary-clicked);
+    color: $white;
+
+    &:active {
+        color: $white !important;
+    }
+
+    &:disabled {
+        background-color: $primary-passive;
+        border: $primary-passive;
+        color: $white;
+    }
+
+    &:hover {
+        color: $white;
+    }
 }
 
-.btn-primary:active {
-    @include btn-color($white, $primary-dark);
+
+.btn-secondary {
+    @include button-variant($white, $white, $white, $active-background:  $white-clicked);
+    color: $primary;
+
+    &:active {
+        color: $primary !important;
+    }
+
+    &:disabled {
+        background-color:  $white-clicked;
+        border:  $white-clicked;
+        color: #9B9B9B;
+        // pointer-events: none;        /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    }
+    &:disabled:hover {
+        color:  #9B9B9B;     /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    }
+
+    &:hover {
+        color: $secondary;
+    }
 }
 
-.btn-primary:disabled {
-    @include btn-color($white, $primary-light);
-}
-
-
-.btn-secondary:hover {
-    @include btn-color($white, $white);
-}
-
-.btn-secondary:active {
-    @include btn-color($white, $gray-300);
-}
-
-.btn-secondary:disabled {
-    @include btn-color($white, $gray-300);
-}
 
 .btn-dark {
-    background-color: $gray-700;
+    @include button-variant($gray-700, $gray-700, $gray-700, $gray-700, #131313, #131313);
+    color: $primary;
+
+    &:active {
+        color: $primary !important;
+    }
+
+    &:disabled {
+        background-color:  $white-clicked;
+        border:  $white-clicked;
+        color: #9B9B9B;
+        // pointer-events: none;           /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    }
+
+    &:hover {
+        color: $secondary;
+    }
 }
 
-.btn-dark:active {
-    background-color: $gray-900;
+
+.btn-danger {
+    @include button-variant(#D0021B, #D0021B, #DA4052, #DA4052);
+
+    &:disabled {
+        background-color: $warning-passive;
+        border: $warning-passive;
+    }
 }
 
-/* --------------------Font colors-------------- */
+
+.btn-success {
+    @include button-variant(#417505, #417505, #669036, #669036);
+
+    &:disabled {
+        background-color: #C3D2B1;
+        border: #C3D2B1;
+    }
+}
+
+
+
+/* --------------------Font----------------- */
 
 .text-primary {
-    color: $primary;
     border-radius: 8px;
-}
-
-.text-secondary {
-    color: $gray-600 !important;
 }
