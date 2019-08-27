@@ -56,7 +56,7 @@ nextTwo.onclick = function() {
   nextTwo.hidden = true;
   
   document.getElementById('word-five').innerHTML = 'DEAR';
-  document.getElemenyById('word-six').innerHTML = 'FRI-';
+  document.getElementById('word-six').innerHTML = 'FRI-';
   lastLyric.style.display = 'inline-block';
   document.getElementById('letter-note-three').innerHTML = 'G';
   document.getElementById('letter-note-four').innerHTML = 'E';
@@ -72,11 +72,11 @@ nextThree.onclick = function() {
   nextThree.hidden = true;
   
   document.getElementById('word-one').innerHTML = 'HAP-';
-  document.getElemenyById('word-two').innerHTML = 'PY';
+  document.getElementById('word-two').innerHTML = 'PY';
   document.getElementById('word-three').innerHTML = 'BIRTH';
-  document.getElemenyById('word-four').innerHTML = 'DAY';
+  document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('word-five').innerHTML = 'TO';
-  document.getElemenyById('word-six').innerHTML = 'YOU!';
+  document.getElementById('word-six').innerHTML = 'YOU!';
   
   document.getElementById('letter-note-one').innerHTML = 'F';
   document.getElementById('letter-note-two').innerHTML = 'F';
