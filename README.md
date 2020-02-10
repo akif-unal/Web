@@ -1,2 +1,2 @@
 # Web Projects 
-Html, Css, Bootstrap, AngularJs
+Html, Css, Bootstrap
