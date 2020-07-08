@@ -8,39 +8,59 @@
 </head>
 
 <body>
-  <form>
-    <label for="fname">First Name:</label>
-    <input type="text" name="fname" id="fname"><br>
+  <header>
+    <h1>Register</h1>
+  </header>
 
-    <label for="lname">Last Name:</label>
-    <input type="text" name="lname" id="lname"><br>
+  <nav>
+    <a href="http://google.com">Google</a>
+  </nav>
+  <br>
+  <form method="GET">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" id="firstname"><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname" id="lastname"><br>
 
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" required><br>
 
-    <label for="bday">Birthday:</label>
-    <input type="date" name="bday" id="bday"><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" minlength="5" maxlength="6" required><br>
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" name="birthday" id="birthday"><br>
 
     Gender: <br>
-    <input type="radio" name="gender" id="male" value="male">
+    <input type="radio" name="gender" id="male" value="Male">
     <label for="male">Male</label><br>
 
-    <input type="radio" name="gender" id="female" value="female">
+    <input type="radio" name="gender" id="female" value="Female">
     <label for="female">Female</label><br>
 
-    <input type="radio" name="gender" id="other" value="other">
+    <input type="radio" name="gender" id="other" value="Other">
     <label for="other">Other</label><br>
 
     Pets: <br>
-    <input type="checkbox" id="cat" value="cat">
+    <input type="checkbox" name="cat" id="cat">
     <label for="cat">Cat</label><br>
 
-    <input type="checkbox" id="dog" value="dog">
+    <input type="checkbox" name="dog" id="dog">
     <label for="dog">Dog</label><br>
+
+    <label for="cars">Cars:</label><br>
+    <select id="cars" name="cars">
+      <option value="Volvo">Volvo</option>
+      <option value="Opel" selected>Opel</option>
+    </select><br>
+
 
     <input type="submit" value="Register">
     <input type="reset" value="Reset">
   </form>
+  <br>
+  <footer>Website made with love</footer>
 </body>
 
 </html>
