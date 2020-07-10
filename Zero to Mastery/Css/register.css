@@ -1,6 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 h1 {
   font-size: 37px;
   font-weight: bolder;
   border: pink 2px solid;
   text-decoration: underline;
+}
+
+.title-5.main-brand-5 {
+  color: pink !important;
+}
+
+.title-5 {
+  color: gray !important;
 }
