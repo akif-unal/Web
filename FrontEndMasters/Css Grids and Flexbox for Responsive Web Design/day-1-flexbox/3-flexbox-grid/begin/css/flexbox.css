@@ -54,6 +54,10 @@ div img {
 	background-color: #ccf;
 }
 
+.col-2-1 {
+	background-color: mistyrose;
+}
+
 .col-3 {
 	background-color: #fcf;
 }
@@ -71,9 +75,14 @@ div img {
 	}
 
 	.col-1-4,
+	.col-2-1,
 	.col-3,
 	.col-4 {
 		flex: 0 0 92%;
+	}
+
+	.row5-order {
+		order: -1;
 	}
 
 }
@@ -86,9 +95,11 @@ div img {
 		flex: 0 0 20%;
 	}
 
-	.col-2 {
+	.col-2,
+	.col-2-1 {
 		flex: 0 0 44%;
 	}
+
 
 	.col-3 {
 		flex: 0 0 68%;
@@ -97,4 +108,18 @@ div img {
 	.col-4 {
 		flex: 0 0 92%;
 	}
+
+	.row5-order {
+		order: 0;
+	}
+
+	.reverse {
+		flex-flow: row-reverse;
+	}
+
+	.reverse [class*="col-1"] {
+		margin-left: 0%;
+		margin-right: 4%;
+	}
+
 }
