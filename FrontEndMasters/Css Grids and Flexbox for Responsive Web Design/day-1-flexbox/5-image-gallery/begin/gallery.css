@@ -21,27 +21,27 @@ ul {
 .row {
 	display: flex;
 	flex-flow: row wrap;
-	flex: auto;
+	flex: 0 1 auto;
 	justify-content: center;
 }
 
-.col-3 {
+li {
 	flex: 0 0 100%;
 }
 
-.col-3 img {
+img {
 	width: 100%;
 	height: auto;
 }
 
 @media (min-width: 605px) {
-	.col-3 {
+	li {
 		flex: 0 0 50%;
 	}
 }
 
 @media (min-width: 910px) {
-	.col-3 {
+	li {
 		flex: 0 0 33%;
 	}
 }
