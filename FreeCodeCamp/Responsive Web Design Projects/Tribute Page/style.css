@@ -1,0 +1,18 @@
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#main {
+  display: grid;
+  justify-items: center;
+}
