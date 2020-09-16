@@ -1,0 +1,30 @@
+.wrapper {
+  /* display: grid; */
+  /* grid-template-columns: auto; */
+  /* justify-content: center; */
+}
+
+header {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  align-items: center; */
+}
+
+
+#header-img {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1000px) {
+  #header-img {
+    max-width: 500px;
+  }
+}
