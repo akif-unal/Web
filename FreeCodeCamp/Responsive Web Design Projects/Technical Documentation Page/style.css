@@ -1,0 +1,33 @@
+nav {
+  background: linear-gradient(to right, var(--yellow), transparent);
+}
+
+@media screen and (min-width: 831px) {
+  main {
+    padding-left: 190px;
+  }
+
+  #navbar {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 230px;
+    padding-left: 5px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    background: linear-gradient(to bottom, var(--yellow), transparent);
+  }
+
+  #navbar a {
+    display: block;
+  }
+}
