@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.nice-box {
+  display: inline-block;
+  border: 5px salmon dashed;
+  padding: 8px 16px;
+  text-align: center;
+  width: calc(50% - 20px);
+  margin: 20px 10px;
+}
+
+.nice-box:first-of-type {
+  height: 300px;
+  /* width: 50%; */
+  opacity: 0;
+}
+
+.nice-box:hover {
+  opacity: 1;
+}
+
+.nice-box:last-of-type:hover {
+  border: 5px black dashed;
+  background-color: salmon;
+}

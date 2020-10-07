@@ -47,8 +47,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    /* zone:hover overlaps fix*/
-    z-index: 1;
 }
 
 li {
