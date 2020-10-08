@@ -83,8 +83,10 @@ body {
     border: none;
 }
 
-
-
+/* header's height */
+main {
+    margin-top: 43px;
+}
 
 #product-overview {
     background: url(./freedom.jpg) no-repeat center center fixed;
@@ -102,6 +104,4 @@ body {
     margin-top: 0;
 }
 
-/* h1 {
-    font-family: sans-serif;
-} */
+#plans {}
