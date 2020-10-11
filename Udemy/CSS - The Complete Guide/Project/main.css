@@ -1,95 +1,4 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-/* ! HEADER */
-
-.main-header {
-    background-color: #2ddf5c;
-    padding: 8px 16px;
-}
-
-.main-header a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #0e4f1f;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /* zone:hover overlaps fix*/
-    z-index: 1;
-}
-
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-header__brand {
-    font-size: 22px;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 75px);
-    vertical-align: middle;
-}
-
-.main-nav__items {
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-nav__item>a {
-    padding: 3px 0;
-}
-
-.main-nav__item>a:hover,
-.main-nav__item>a:active {
-    color: white;
-    border-bottom: 5px solid white;
-}
-
-
-.main-nav__item--cta a {
-    color: white;
-    background: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-    color: #ff1b68;
-    background-color: white;
-    border: none;
-}
-
-/* ! Main */
-/* header's height */
-main {
-    margin-top: 43px;
-}
+/* ! Product overview section  */
 
 #product-overview {
     background: url(./freedom.jpg) no-repeat center center fixed;
@@ -105,12 +14,14 @@ main {
 
 /* ! Plans Section */
 
-#plans {
+.section-title {
+    color: #2ddf5c;
     text-align: center;
 }
 
-.section-title {
-    color: #2ddf5c;
+.plan__list {
+    width: 80%;
+    margin: auto;
     text-align: center;
 }
 
@@ -167,26 +78,7 @@ main {
     margin: 8px 0;
 }
 
-.button {
-    background-color: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-    background-color: white;
-    color: #0e4f1f;
-}
-
-.button:focus {
-    outline: none;
-}
+/* ! Key features Section */
 
 #key-features {
     background-color: #ff1b68;
@@ -227,36 +119,6 @@ main {
     font-weight: bold;
     color: white;
     font-size: 20px;
-}
-
-/* ! FOOTER  */
-
-.main-footer {
-    background-color: black;
-    padding: 32px;
-    margin-top: 48px;
-}
-
-.main-footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.main-footer__link {
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-footer__link>a {
-    color: white;
-    text-decoration: none;
-}
-
-.main-footer__link>a:hover,
-.main-footer__link>a:active {
-    color: #ccc;
 }
 
 
