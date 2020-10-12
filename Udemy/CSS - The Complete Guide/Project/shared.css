@@ -27,12 +27,19 @@ body {
 }
 
 .sticky {
-  position: fixed;
+  /* position: fixed; */
+  /* width: 100%; */
+  position: sticky;
   top: 0;
-  width: 100%;
   /* zone:hover overlaps fix*/
   z-index: 1;
 }
+
+/* ! Main */
+/* for header's height  with display: fixed*/
+/* main {
+  margin-top: 43px;
+} */
 
 .main-header>div {
   display: inline-block;
@@ -85,11 +92,7 @@ body {
   border: none;
 }
 
-/* ! Main */
-/* for header's height */
-main {
-  margin-top: 43px;
-}
+
 
 
 
