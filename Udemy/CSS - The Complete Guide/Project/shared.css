@@ -18,6 +18,7 @@ body {
 .main-header {
   background-color: #2ddf5c;
   padding: 8px 16px;
+  z-index: 1;
 }
 
 .main-header a {
@@ -31,8 +32,6 @@ body {
   /* width: 100%; */
   position: sticky;
   top: 0;
-  /* zone:hover overlaps fix*/
-  z-index: 1;
 }
 
 /* ! Main */
