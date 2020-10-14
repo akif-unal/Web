@@ -4,12 +4,16 @@
     background: url(./images/freedom.jpg) no-repeat center center fixed;
     height: 520px;
     padding: 10px;
+    position: relative;
 }
 
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
-    margin-top: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
 }
 
 /* ! Plans Section */
