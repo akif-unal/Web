@@ -13,14 +13,16 @@ body {
     margin: 0;
     height: 400px;
 }
-  
-.navigation, .headline, .contact-us {
+
+.navigation,
+.headline,
+.contact-us {
     padding: 20px;
     border: 5px solid black;
     margin: 10px;
     position: fixed;
 }
-  
+
 .headline div {
     background: rgb(105, 105, 109);
     color: white;
@@ -43,6 +45,7 @@ body {
     left: 150px;
     width: 270px;
     height: 200px;
+    z-index: 99;
 }
 
 .contact-us {
@@ -50,19 +53,27 @@ body {
     top: 180px;
     left: 320px;
     width: 180px;
+    z-index: 100;
 }
 
 .image-1 {
     top: 200px;
-    left: 230px; 
+    left: 230px;
 }
 
 .image-2 {
     top: 230px;
     left: 260px;
+    z-index: 1000;
 }
 
 .image-3 {
     left: 300px;
     top: 260px;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+    position: fixed;
 }
