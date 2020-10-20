@@ -44,12 +44,6 @@ body {
   top: 0;
 }
 
-/* ! Main */
-/* for header's height  with display: fixed*/
-/* main {
-  margin-top: 43px;
-} */
-
 .main-header>div {
   display: inline-block;
   vertical-align: middle;
@@ -61,8 +55,8 @@ body {
   text-decoration: none;
   color: #0e4f1f;
   height: 1.5rem;
-  /* width: 20px; */
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -73,7 +67,7 @@ body {
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 75px);
+  width: calc(100% - 122px);
   vertical-align: middle;
 }
 
@@ -87,7 +81,8 @@ body {
   margin: 0 1rem;
 }
 
-.main-nav__item>a {
+.main-nav__item>a,
+.mobile-nav__item a {
   padding: 0.2rem 0;
   font-weight: bold;
   text-decoration: none;
@@ -100,8 +95,8 @@ body {
   border-bottom: 5px solid white;
 }
 
-
-.main-nav__item--cta a {
+.main-nav__item--cta>a,
+.mobile-nav__item--cta>a {
   color: white;
   background: #ff1b68;
   padding: 0.5rem 1rem;
@@ -109,14 +104,43 @@ body {
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
   color: #ff1b68;
   background-color: white;
   border: none;
 }
 
+/* ! Mobile Header */
 
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
 
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
 
 
 /* ! Button Style */
@@ -141,6 +165,32 @@ body {
 .button:focus {
   outline: none;
 }
+
+/* ! Toggle Button  */
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  margin: 0.61rem 0;
+  display: block;
+
+}
+
 
 
 /* ! FOOTER  */
