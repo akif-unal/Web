@@ -54,21 +54,19 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #0e4f1f;
-  height: 1.5rem;
+  height: 2.2rem;
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header__brand img {
   height: 100%;
+  /* vertical-align: middle; */
   /* width: 100%; */
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -111,6 +109,7 @@ body {
   background-color: white;
   border: none;
 }
+
 
 /* ! Mobile Header */
 
@@ -197,7 +196,7 @@ body {
 
 .main-footer {
   background-color: black;
-  padding: 2rem;
+  padding: 1.5rem;
   margin-top: 3rem;
 }
 
@@ -209,8 +208,7 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
 
 .main-footer__link>a {
@@ -227,4 +225,33 @@ body {
 
 .open {
   display: block !important;
+}
+
+
+@media (min-width: 40rem) {
+
+  /* ! HEADER  */
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
+
+
+  /* ! FOOTER  */
+
+  .main-footer {
+    padding: 2rem;
+  }
+
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
 }

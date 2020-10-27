@@ -43,3 +43,5 @@ toggleButton.addEventListener('click', () => {
   mobileNav.classList.add('open');
   backdrop.classList.add('open');
 })
+
+console.log("Page height:", document.body.scrollHeight);
