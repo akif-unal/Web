@@ -50,9 +50,6 @@ body {
 }
 
 .main-header__brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
   color: #0e4f1f;
   height: 2.2rem;
   display: inline-block;
@@ -61,7 +58,6 @@ body {
 
 .main-header__brand img {
   height: 100%;
-  /* vertical-align: middle; */
   /* width: 100%; */
 }
 
