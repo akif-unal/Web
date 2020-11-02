@@ -16,15 +16,14 @@ body {
 
 .flex-container {
     background: white;
-    height: 1000px;
     padding: 10px;
     border: 5px solid black;
+    height: 1000px;
     display: flex;
-    /* flex-flow: row wrap; */
+    flex-flow: row nowrap;
+    /* place-content: center; */
     align-items: center;
-    /* justify-content: center;
-    align-content: center; */
-    place-content: center;
+    justify-content: flex-start;
 }
 
 .item-1 {
@@ -71,6 +70,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex: 0 1 auto;
 }
 
 .item-6 {
