@@ -7,8 +7,8 @@
     row-gap: 10px; */
     /* gap: 10px 20px; */
     gap: 10px;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
+    grid-template-columns: [hd-start] repeat(4, [col-start] 1fr [col-end]) [hd-end];
+    grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
     grid-template-areas:
         "header header header header"
         ". . main main"
@@ -17,6 +17,7 @@
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    grid-column: col-start 2/ col-end 2;
 }
 
 .el2 {
@@ -32,7 +33,7 @@
     /* grid-column: 2 / span 3;
     grid-row: row-1-start / row-2-end; */
     /* grid-area: row-1-start / 2 / row-2-end / span 3; */
-    grid-area: header;
+    grid-area: hd;
 }
 
 .el4 {
