@@ -117,4 +117,8 @@ main {
     align-items: center;
   }
 
+  .signup-form .signup-form__checkbox {
+    display: flex;
+  }
+
 }
