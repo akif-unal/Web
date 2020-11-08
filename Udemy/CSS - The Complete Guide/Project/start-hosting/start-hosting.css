@@ -10,6 +10,9 @@ main {
 
 .signup-form {
   padding: 1rem;
+  display: grid;
+  grid-auto-rows: 3rem;
+  row-gap: 1rem;
 }
 
 .signup-form label {
@@ -20,10 +23,13 @@ main {
 .signup-form input,
 .signup-form select {
   display: block;
-  margin-top: 1rem;
   width: 100%;
 }
 
+.signup-form .signup-form__checkbox {
+  display: flex;
+  align-items: center;
+}
 
 
 /* .signup-form [type="checkbox"]  */
@@ -88,12 +94,27 @@ main {
 
 .signup-form button[type="submit"] {
   display: block;
-  margin-top: 1rem;
 }
 
 @media (min-width: 40rem) {
   .signup-form {
     margin: auto;
-    width: 25rem;
+    width: 30rem;
+    row-gap: 1rem;
+    grid-template-columns: auto;
   }
+
+  .signup-form .signup-form__label-title {
+    display: grid;
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .signup-form .signup-form__label {
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: 10rem auto;
+    align-items: center;
+  }
+
 }

@@ -16,7 +16,7 @@
     <!-- Backdrop -->
     <div class="backdrop"></div>
 
-    <!-- Sticky header -->
+    <!-- Sticky mainheader -->
     <header class="main-header sticky">
         <div>
             <button class="toggle-button">
@@ -73,32 +73,36 @@
             </li>
         </ul>
     </nav>
+
     <main class="signup-page">
         <h1 class="signup-title">Awesome! Let's dive right in!</h1>
         <form action="index.html" class="signup-form">
-            <label for="title">Title
+            <label for="title" class="signup-form__label-title">Title
                 <select id="title" name="title">
                     <option value="mr">Mr.</option>
                     <option value="mrs">Ms.</option>
                 </select>
             </label>
 
-            <label for="first-name">First name
+            <label for="first-name" class="signup-form__label">
+                First name
                 <input type="text" name="name" id="first-name" required>
             </label>
-            <label for="last-name">Last name
+            <label for="last-name" class="signup-form__label">Last name
                 <input type="text" name="surname" id="last-name" required>
             </label>
-            <label for="email">E-Mail
+            <label for="email" class="signup-form__label">E-Mail
                 <input type="email" name="email" id="email" required>
             </label>
-            <label for="password">Password
+            <label for="password" class="signup-form__label">Password
                 <input type="password" name="password" id="password" required>
             </label>
-            <input type="checkbox" name="agree-terms" id="agree-terms" required>
-            <label for="agree-terms">Agree to
-                <a href="#">Terms &amp; Conditions</a>
-            </label>
+            <div class="signup-form__label signup-form__checkbox">
+                <input type="checkbox" name="agree-terms" id="agree-terms" required>
+                <label for="agree-terms">Agree to
+                    <a href="#">Terms &amp; Conditions</a>
+                </label>
+            </div>
             <button class="button" type="submit">Sign Up</button>
         </form>
     </main>
