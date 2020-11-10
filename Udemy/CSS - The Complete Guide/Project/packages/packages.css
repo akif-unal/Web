@@ -31,6 +31,7 @@ main {
   border: 4px solid #0e4f1f;
   border-left: none;
   position: relative;
+  overflow: hidden;
 }
 
 .package:hover,
@@ -51,11 +52,15 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 1.25rem;
+  margin: 0;
   font-size: 0.8rem;
   color: white;
   background-color: #ff5454;
   padding: 0.5rem;
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 
