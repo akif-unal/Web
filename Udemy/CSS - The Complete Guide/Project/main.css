@@ -164,7 +164,10 @@
 /*! MODAL */
 .modal {
     position: fixed;
-    display: none;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity .2s ease-out, transform .5s ease-out;
     z-index: 200;
     top: 20%;
     left: 30%;
