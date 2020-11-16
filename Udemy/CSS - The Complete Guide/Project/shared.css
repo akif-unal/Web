@@ -48,6 +48,7 @@ main {
 .sticky {
   /* position: fixed;
   width: 100%; */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -94,7 +95,7 @@ main {
   padding: 0.2rem 0;
   font-weight: bold;
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .main-nav__item>a:hover,
@@ -104,6 +105,7 @@ main {
 }
 
 .main-nav__item--cta {
+  -webkit-animation: wiggle .4s 3s 8 ease-out none;
   animation: wiggle .4s 3s 8 ease-out none;
 }
 
@@ -201,7 +203,7 @@ main {
 .button:hover,
 .button:active {
   background-color: white;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .button:focus {
@@ -285,6 +287,20 @@ main {
     margin: 0 1rem;
   }
 
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  50% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(10deg);
+  }
 }
 
 @keyframes wiggle {
