@@ -4,4 +4,9 @@
 
 // console.log(list[0][2]);
 
-let list = ["tiger", "cat", "bear", "bird"];
+const user = {
+  name: "John",
+  age: 34,
+  hobby: "Soccer",
+  isMarried: false,
+};
