@@ -1,7 +1,16 @@
 const database = [{
-  username: "andrei",
-  password: "supersecret"
-}];
+    username: "andrei",
+    password: "supersecret"
+  },
+  {
+    username: "sally",
+    password: "123"
+  },
+  {
+    username: "ingrid",
+    password: "777"
+  }
+];
 
 const newsFeed = [{
     username: "Bobby",
@@ -10,18 +19,32 @@ const newsFeed = [{
   {
     username: "Sally",
     timeline: "Javascript is sooo coool!"
+  },
+  {
+    username: "Mitch",
+    timeline: "Javascript is preeetyy coool!"
   }
 ];
 
-const usernamePrompt = prompt("What's your username?");
-const passwordPrompt = prompt("What's your password?");
+function isUserValid(username, password) {
+  for (let i = 0; i < database.length; i++) {
+    if (database[i].username === username &&
+      database[i].password === password) {
+      return true;
+    }
+  }
+  return false;
+}
 
-function signIn(user, pass) {
-  if (user === database[0].username && pass === database[0].password) {
+function signIn(username, password) {
+  if (isUserValid(username, password)) {
     console.log(newsFeed);
   } else {
     alert("Sorry, wrong username and password!");
   }
 }
+
+const usernamePrompt = prompt("What\'s your username?");
+const passwordPrompt = prompt("What\'s your password?");
 
 signIn(usernamePrompt, passwordPrompt);
