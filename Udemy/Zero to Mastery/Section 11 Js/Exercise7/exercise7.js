@@ -17,15 +17,15 @@ const database = [{
 // 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
 
 const newsfeed = [{
-    username: "yogi",
+    username: "Yogi",
     timeline: "So tired from all that learning!"
   },
   {
-    username: "yogisa",
+    username: "Sally",
     timeline: "Javascript is sooooo cool!"
   },
   {
-    username: "yogias",
+    username: "Mitch",
     timeline: "Javascript is preeetyy cool!"
   }
 ];
