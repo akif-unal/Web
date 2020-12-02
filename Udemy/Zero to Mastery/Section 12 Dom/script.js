@@ -4,29 +4,20 @@ const ul = document.querySelector('ul');
 const li = document.querySelectorAll('li');
 const deleteButtons = document.querySelectorAll('.d-flex button');
 
-function lineThrough() {
-  this.classList.toggle("done");
+const lineThrough = (ev) => {
+  ev.target.classList.toggle("done");
 };
 
-function deleteItemEvent() {
-  this.parentNode.remove();
+const deleteItemEvent = (ev) => {
+  if (ev.target.tagName === "BUTTON") {
+    ev.target.parentNode.remove();
+  }
 };
 
 const inputLength = () => {
   return userinput.value.length;
 };
 
-const listItemEvent = () => {
-  li.forEach(el => {
-    el.addEventListener('click', lineThrough);
-  });
-};
-
-const deleteButtonEvent = () => {
-  deleteButtons.forEach(el =>
-    el.addEventListener("click", deleteItemEvent)
-  );
-}
 
 const createDiv = () => {
   const div = document.createElement("div");
@@ -41,7 +32,7 @@ const createLi = () => {
 
   li.appendChild(document.createTextNode(userinput.value));
   userinput.value = "";
-  li.addEventListener("click", lineThrough);
+  // li.addEventListener("click", lineThrough);
   div.appendChild(li);
 };
 
@@ -50,7 +41,7 @@ const createButton = () => {
   const button = document.createElement("button");
 
   button.appendChild(document.createTextNode("Delete"));
-  button.addEventListener("click", deleteItemEvent);
+  // button.addEventListener("click", deleteItemEvent);
   div.appendChild(button);
 };
 
@@ -72,9 +63,8 @@ const addListAfterKeypress = (event) => {
   }
 };
 
-deleteButtonEvent();
-listItemEvent();
+ul.addEventListener('click', lineThrough);
+ul.addEventListener('click', deleteItemEvent);
 
 button.addEventListener("click", addListAfterClick);
-
 userinput.addEventListener("keypress", addListAfterKeypress);
