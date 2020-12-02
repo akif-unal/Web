@@ -5,11 +5,13 @@ const li = document.querySelectorAll('li');
 const deleteButtons = document.querySelectorAll('.d-flex button');
 
 const lineThrough = (ev) => {
-  ev.target.classList.toggle("done");
+  if (ev.target.nodeName.toLowerCase() === "li") {
+    ev.target.classList.toggle("done");
+  }
 };
 
 const deleteItemEvent = (ev) => {
-  if (ev.target.tagName === "BUTTON") {
+  if (ev.target.nodeName.toLowerCase() === "button") {
     ev.target.parentNode.remove();
   }
 };
@@ -26,29 +28,32 @@ const createDiv = () => {
   ul.appendChild(div);
 };
 
-const createLi = () => {
+const getLastDiv = () => {
   const div = document.querySelector("ul").lastElementChild;
+  // const div = document.querySelector(".d-flex:last-child");
+  return div;
+}
+
+const createLi = (div) => {
   const li = document.createElement("li");
 
   li.appendChild(document.createTextNode(userinput.value));
   userinput.value = "";
-  // li.addEventListener("click", lineThrough);
   div.appendChild(li);
 };
 
-const createButton = () => {
-  const div = document.querySelector(".d-flex:last-child");
+const createButton = (div) => {
   const button = document.createElement("button");
 
   button.appendChild(document.createTextNode("Delete"));
-  // button.addEventListener("click", deleteItemEvent);
   div.appendChild(button);
 };
 
 const createListElement = () => {
   createDiv();
-  createLi();
-  createButton();
+  const div = getLastDiv();
+  createLi(div);
+  createButton(div);
 };
 
 const addListAfterClick = () => {
