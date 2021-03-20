@@ -29,10 +29,12 @@ function setBgGradient() {
 function changeBackground() {
   changeInputColors();
   setBgGradient();
+  console.log("test onLoad");
 }
 
 colorInput1.addEventListener("input", setBgGradient);
-
 colorInput2.addEventListener("input", setBgGradient);
 
 randomButton.addEventListener("click", changeBackground);
+// Randomize background color on load
+window.addEventListener("load", changeBackground);
