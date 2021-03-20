@@ -1,12 +1,8 @@
 const body = document.querySelector("body");
-const currentCss = document.querySelector("h2");
+const currentCss = document.querySelector("h3");
 const colorInput1 = document.querySelector(".color1");
 const colorInput2 = document.querySelector(".color2");
 const randomButton = document.querySelector(".random-button");
-
-// Prints background color on load
-currentCss.textContent =
-  getComputedStyle(body).getPropertyValue("background-image") + ";";
 
 function getRandomColor() {
   return Math.floor(Math.random() * 16777215).toString(16);
@@ -18,7 +14,7 @@ function changeInputColors() {
 }
 
 function setBgText() {
-  currentCss.textContent = body.style.backgroundImage;
+  currentCss.textContent = body.style.backgroundImage + ";";
 }
 
 function setBgGradient() {
