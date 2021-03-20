@@ -33,4 +33,4 @@ colorInput2.addEventListener("input", setBgGradient);
 
 randomButton.addEventListener("click", changeBackground);
 // Randomize background color on load
-window.addEventListener("load", changeBackground);
+document.addEventListener("DOMContentLoaded", changeBackground);
