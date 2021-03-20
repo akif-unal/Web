@@ -12,6 +12,7 @@ function createLi(text) {
   let textNode = document.createTextNode(text);
   li.appendChild(textNode);
 
+  userInput.value = "";
   return li;
 }
 
