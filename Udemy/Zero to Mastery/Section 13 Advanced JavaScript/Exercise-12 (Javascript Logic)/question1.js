@@ -5,6 +5,7 @@
 "use strict";
 const test = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
 const test1 = [1, 1, 1, "2", "3", 2, 2, 3, 4];
+console.log(`input1: ${test} \ninput2: ${test1}`);
 
 function sortArray(array) {
   return array.sort((a, b) => a - b);
