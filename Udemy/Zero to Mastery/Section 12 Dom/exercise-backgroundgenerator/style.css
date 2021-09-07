@@ -1,31 +1,46 @@
 body {
-  font: 16px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  background: linear-gradient(to right, #ff0000, #ffff00);
+	font: 16px 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	background: linear-gradient(to right, #ff0000, #ffff00);
 }
 
 h1 {
-  font: 600 3.5rem "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  width: 100%;
+	font: 600 3.5rem 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	width: 100%;
 }
 
 h3 {
-  font: 900 1rem "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0.01em;
+	font: 900 1rem 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 0.01em;
+}
+
+.input-label {
+	font: 900 1rem 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 0.01em;
 }
 
 .d-flex {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 15px;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }

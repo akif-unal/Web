@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gradient Background</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gradient Background</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+	<body>
+		<h1>Background Generator</h1>
+		<div class="d-flex">
+			<div class="input-container">
+				<label class="input-label" for="color1">left</label>
+				<input id="color1" type="color" name="color1" value="#ff0000" />
+			</div>
 
-<body>
-  <h1>Background Generator</h1>
-  <div class="d-flex">
-    <input class="color1" type="color" name="color1" value="#ff0000">
-    <input class="color2" type="color" name="color2" value="#ffff00">
-    <input class="random-button" type="button" value="Random">
-  </div>
-  <h2>Current CSS Background</h2>
-  <h3></h3>
+			<div class="input-container">
+				<label class="input-label" for="color2">right</label>
+				<input id="color2" type="color" name="color2" value="#ffff00" />
+			</div>
 
+			<input class="random-button" type="button" value="Random" />
+		</div>
+		<h2>Current CSS Background</h2>
+		<h3></h3>
 
-  <!-- <script type="text/javascript" src="script.js"></script> -->
-  <script type="text/javascript" src="script1.js"></script>
-</body>
-
+		<!-- <script type="text/javascript" src="script.js"></script> -->
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>

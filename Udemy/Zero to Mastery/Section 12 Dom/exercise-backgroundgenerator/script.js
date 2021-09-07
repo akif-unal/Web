@@ -1,36 +1,38 @@
-const css = document.querySelector("h3");
-const colorInput1 = document.querySelector(".color1");
-const colorInput2 = document.querySelector(".color2");
-const body = document.querySelector("body");
-const randomButton = document.querySelector(".random-button");
+const css = document.querySelector('h3');
+const colorInput1 = document.querySelector('#color1');
+const colorInput2 = document.querySelector('#color2');
+const body = document.querySelector('body');
+const randomButton = document.querySelector('.random-button');
 
 // Print background color on load
-css.textContent =
-  window.getComputedStyle(body).getPropertyValue("background-image") + ";";
+// css.textContent =
+// 	window.getComputedStyle(body).getPropertyValue('background-image') + ';';
 
 const randomColor = () => {
-  return Math.floor(Math.random() * 16777215).toString(16);
+	return Math.floor(Math.random() * 16777215).toString(16);
 };
 
-const setGradient = (ev) => {
-  body.style.background = `linear-gradient(to right,
-    ${colorInput1.value}, ${colorInput2.value})`;
-
-  css.textContent = body.style.backgroundImage + ";";
+const setBgText = () => {
+	css.textContent = document.body.style.backgroundImage + ';';
 };
 
-const setRandomBgColor = (ev) => {
-  const randomColor1 = `#${randomColor()}`;
-  const randomColor2 = `#${randomColor()}`;
+const setBgGradient = ev => {
+	body.style.background = `linear-gradient(to right, ${colorInput1.value}, ${colorInput2.value})`;
 
-  colorInput1.value = randomColor1;
-  colorInput2.value = randomColor2;
-
-  setGradient();
+	setBgText;
 };
 
-colorInput1.addEventListener("input", setGradient);
+const setRandomBgColor = ev => {
+	colorInput1.value = `#${randomColor()}`;
+	colorInput2.value = `#${randomColor()}`;
 
-colorInput2.addEventListener("input", setGradient);
+	setBgGradient();
+};
 
-randomButton.addEventListener("click", setRandomBgColor);
+colorInput1.addEventListener('input', setBgGradient);
+
+colorInput2.addEventListener('input', setBgGradient);
+
+randomButton.addEventListener('click', setRandomBgColor);
+
+document.addEventListener('DOMContentLoaded', setRandomBgColor);
