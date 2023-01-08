@@ -1,0 +1,12 @@
+{
+	"name": "zero-to-mastery",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"main": "Section 25 Node.js + Express.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
+}
