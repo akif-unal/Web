@@ -1,12 +1,12 @@
 import express from 'express'
-import { fileURLToPath } from 'url'
 import { config } from 'dotenv'
+import { getDirName } from './helpers/index.js'
 
 const app = express()
 config()
 
 const PORT = process.env.PORT
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
+const dirname = getDirName(import.meta.url)
 
 app.use((req, res, next) => {
 	console.log('<h1>hello</h1>')
@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(dirname + '/public'))
 
 app.get('/:id', (req, res) => {
 	// console.log('req.query: ', req.query)

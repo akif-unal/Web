@@ -1,9 +1,11 @@
-import * as url from 'url'
-export const __filename = url.fileURLToPath(import.meta.url)
-export const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
+import { fileURLToPath } from 'url'
 
-export const getDirname = () => {
-	const __filename = url.fileURLToPath(import.meta.url)
-	const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
+export const getDirName = url => {
+	const __dirname = fileURLToPath(new URL('.', url))
 	return __dirname
+}
+
+export const getFileName = url => {
+	const __filename = fileURLToPath(url)
+	return __filename
 }
